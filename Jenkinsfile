@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-credentials', url: 'https://github.com/ritikkorde/cicd-project.git'
+               git branch: 'master', credentialsId: 'github-credentials', url: 'https://github.com/ritikkorde/cicd-project.git'
             }
         }
 
